@@ -1,0 +1,25 @@
+extends layout
+
+block content
+
+  img(src="#{icon}")
+  h3 City: #{location}
+
+  h3 Condition: #{weather}
+        
+  h3 Local Time: #{time}
+  
+  
+
+  table(style="width:50%")
+    tbody
+        tr
+            th(style='width:15%') Temperature
+            td(style='width:25%') #{temperature}
+            th(style='width:15%') Feels Like
+            td(style='width:45%') #{feelslike}
+        tr
+            th Humidity
+            td #{humidity}
+            th Wind
+            td #{wind}
